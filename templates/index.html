@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Fabion Furnishings</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="static/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="static/assets/css/noscript.css" /></noscript>
+		<style>
+			/* Add custom CSS for the combined F and crown */
+			.custom-logo {
+            display: flex;
+            align-items: center;
+            flex-direction: column; /* Change the flex direction to column */
+        }
+
+        .custom-logo .fa-f:before {
+            content: "F";
+            margin-bottom: 5px; /* Adjust spacing as needed */
+            font-size: 2.5em; /* Adjust font size as needed */
+        }
+
+        .custom-logo .fa-crown {
+            font-size:2em; /* Adjust font size as needed */
+        }
+		.image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust minmax values as needed */
+            gap: 20px; /* Adjust the gap between images as needed */
+        }
+
+        .image-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+        }
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<header id="header">
+					<div class="logo">
+						<div class="logo custom-logo">
+							<i class="fa fa-crown"></i>
+							<i class="fa fa-f"></i>
+						</div>
+					</div>
+					<div class="content">
+						<div class="inner">
+							<h1>Fabion Furnishings</h1>
+							<p>Elevating Your Space with Style & Elegance<br />
+							since 2007<br />
+							Satisfaction of our clients is the ultimate measure of our own success !!</p>
+						</div>
+					</div>
+					<nav>
+						<ul>
+							<li><a href="#intro">Intro</a></li>
+							<li><a href="#work">SERVICES</a></li>
+							<li><a href="#about">OUR WORKS</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+				</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Intro -->
+						<article id="intro">
+							<h2 class="major">Intro</h2>
+							<span class="image main"><img src="static/images/intro.jpg" alt="" /></span>
+							<h3>Welcome to Fabion Furnishings</h3>
+                <p>Transform your surroundings into a haven of comfort and elegance with Fabion Furnishings. Discover
+                    curated collections that speak to your unique taste and lifestyle. Elevate every moment, embrace
+                    every detail—welcome home.</p>
+
+					<h3>Unveiling Timeless Elegance:</h3>
+                <p>Discover a curated collection of furnishings that blend timeless elegance with modern functionality. From luxurious sofas that beckon relaxation to exquisite decor pieces that add a personal touch, our selection is a testament to superior craftsmanship and attention to detail.</p>
+
+					<h3>Crafting Your Unique Story:</h3>
+                <p>Your space is more than just walls and floors; it's a canvas waiting to tell your unique story. At Fabion Furnishings, we offer a diverse range of furniture and decor options to help you craft a narrative that resonates with your taste and lifestyle. Whether you prefer the classic allure of traditional designs or the sleek sophistication of contemporary aesthetics, we have the perfect pieces to express your style.</p>
+
+				<h3>Quality Meets Comfort:</h3>
+                <p>We understand that true luxury is found in the seamless fusion of quality and comfort. That's why each item in our collection is meticulously crafted using premium materials to ensure longevity and a touch of opulence. Immerse yourself in the embrace of our furnishings, where every detail is designed with your comfort in mind.</p>
+
+				<h3>Your Vision, Our Expertise:</h3>
+                <p>Embark on a journey of design collaboration with our experts. Our team is dedicated to bringing your vision to life. Whether you're looking to revitalize a room or embark on a complete home transformation, our designers are here to guide you through the process, ensuring every piece fits seamlessly into your aesthetic vision.</p>
+
+				<h3>Explore, Dream, Create:</h3>
+                <p>Fabion Furnishings is more than a store; it's a haven for those who seek to transform their living spaces into expressions of personal style and refined taste. Explore our collection, dream of the possibilities, and create a home that resonates with your individuality.</p>
+				<p><b>Join us at Fabion Furnishings, where sophistication meets comfort, and your dream space awaits. Elevate your surroundings, and let your home tell your story in style.</b></p>
+						</article>
+
+						<!-- Work -->
+						<article id="work">
+							<h2 class="major">SERVICES</h2>
+							<!-- <span class="image main"><img src="static/static/images/sofa2.jpeg" alt="" /></span> -->
+							<ul>
+								<li>SOFA </li>
+								<li>MATRESSESS</li>
+								<li>CURTAINS</li>
+								<li>BLINDS</li>
+								<li>CARPET</li>
+								<li>WALLPAPER</li>
+							</ul>
+						</article>
+
+						<!-- About -->
+						<article id="about">
+							<h2 class="major">OUR WORKS</h2>
+							<div class="image-grid">
+								<img src="static/images/work1.jpeg" alt="">
+								<img src="static/images/work2.jpeg" alt="">
+								<img src="static/images/work3.jpeg" alt="">
+								<img src="static/images/work4.jpeg" alt="">
+								<img src="static/images/work5.jpeg" alt="">
+								<img src="static/images/work6.jpeg" alt="">
+								<img src="static/images/work7.jpeg" alt="">
+								<img src="static/images/work8.jpeg" alt="">
+								<img src="static/images/work9.jpeg" alt="">
+							</div>
+						</article>
+
+						<!-- Contact -->
+						<article id="contact">
+							<h2 class="major">Contact</h2>
+							<form method="post" action="{{ url_for('home') }}">
+								<div class="fields">
+									<div class="field half">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field half">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="4"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" class="primary" /></li>
+									<li><input type="reset" value="Reset" /></li>
+								</ul>
+							</form>
+						</article>
+
+					</div>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="static/assets/js/jquery.min.js"></script>
+			<script src="static/assets/js/browser.min.js"></script>
+			<script src="static/assets/js/breakpoints.min.js"></script>
+			<script src="static/assets/js/util.js"></script>
+			<script src="static/assets/js/main.js"></script>
+
+	</body>
+</html>
