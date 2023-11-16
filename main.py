@@ -7,11 +7,6 @@ MAIL_APP_PW = os.environ.get('MAIL_PW')
 COMPANY_ADDRESS = os.environ.get('COMPANY_ID')
 PHONE = os.environ.get('PHONE')
 
-MAIL_ADDRESS = 'aameshth2@gmail.com'
-MAIL_APP_PW = 'rwik xdbm hdds ezcw'
-COMPANY_ADDRESS = 'fabionfurnishing@gmail.com'
-PHONE = '+919930456635'
-
 app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
