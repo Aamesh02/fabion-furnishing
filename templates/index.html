@@ -7,32 +7,31 @@
 		<link rel="stylesheet" href="static/assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="static/assets/css/noscript.css" /></noscript>
 		<style>
-			/* Add custom CSS for the combined F and crown */
 			.custom-logo {
             display: flex;
             align-items: center;
-            flex-direction: column; /* Change the flex direction to column */
+            flex-direction: column;
         }
 
         .custom-logo .fa-f:before {
             content: "F";
-            margin-bottom: 5px; /* Adjust spacing as needed */
-            font-size: 2.5em; /* Adjust font size as needed */
+            margin-bottom: 5px;
+            font-size: 2.5em; 
         }
 
         .custom-logo .fa-crown {
-            font-size:2em; /* Adjust font size as needed */
+            font-size:2em;
         }
 		.image-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust minmax values as needed */
-            gap: 20px; /* Adjust the gap between images as needed */
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /
+            gap: 20px; 
         }
 
         .image-grid img {
             width: 100%;
             height: auto;
-            border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+            border-radius: 10px; 
         }
 		</style>
 	</head>
@@ -149,6 +148,10 @@
 									<li><input type="reset" value="Reset" /></li>
 								</ul>
 							</form>
+							<ul class="icons">
+								<li><a href="{{ mail }}" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+								<li><a href="{{ phone }}" class="icon solid fa-phone"><span class="label">Phone</span></a></li>
+							</ul>
 						</article>
 
 					</div>
